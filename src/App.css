@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #747f94;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,67 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Nav-head{
+ text-align: center;
+ color:white;
+ 
+}
+
+.btn{
+  align-self: flex-end;
+}
+.hed{
+  color:gold;
+
+}
+.ki{
+  color:darkorange;
+  padding-left: 30%;
+  float: center;
+}
+.ji{
+  color:lawngreen;
+  padding-left: 30%;
+
+
+}
+.btn-outline-light{
+  
+  margin-left: 30%;
+}
+.carousel slide{
+  width: 50%;
+  height: 50%;
+}
+.hi{
+  float: right;
+}
+.yes{
+  float: left;
+ padding-left: 5px;
+ padding-top: 5px;
+
+}
+.rounded {
+  height:200px;
+  width:200px;
+  
+}
+.rounded1{
+  height:100px;
+  width:100px;
+  
+}
+.rounded2{
+  height:100px;
+  width:100px;
+  
+}
+.poll{
+  text-align: center;
+  color:antiquewhite;
+}
+#write-in{
+  text-align: left;
 }

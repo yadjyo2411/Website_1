@@ -11,3 +11,119 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.sidebar{
+	width:230px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color:cadetblue;
+	transition:  width 300ms;
+
+}
+.sidebar-brand{
+	color: #fff;
+	height: 90px;
+	padding: 2rem;
+
+
+
+}
+.sidebar-brand span{
+	display: flex;
+	padding-right: 1rem;
+}
+.sidebar-menu li{
+	width: 100%;
+	margin-bottom:1.5rem;
+}
+.sidebar-menu a{
+    padding-left: 0.7rem;
+	display: block;
+	color: #fff;
+	font-size: 0.2rem;
+	text-decoration: none;
+	margin-bottom: 15px;
+
+}
+.sidebar-menu a:hover{
+	background: #fff;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	color: black;
+	border-radius:15px 0px 0px 15px;
+}
+
+.sidebar-menu a span:first-child{
+	font-size: 0.5rem;
+	padding-right: 1rem;
+}
+#nav-toggle:checked + .sidebar{
+	width:80px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child{
+	display: none;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand h2 ,
+#nav-toggle:checked + .sidebar li a {
+	padding-left: 1rem;
+}
+#nav-toggle:checked ~ .main-content{
+	margin-left: 100px;
+}
+#nav-toggle:checked ~ .main-content header{
+	width: calc(100% - 100px);
+	left: 100px;
+}
+
+
+main{
+	margin-top: 65px;
+	padding: 2rem 1.5rem;
+	background: #f0f0f0;
+	border: 1px solid #f0f0f0;
+	min-height: calc(100vh - 77px);
+	
+} 
+.cards{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 2rem;
+	margin-top: 1rem;
+	
+}
+.card-single{
+	display: flex;
+	justify-content: space-between;
+	background: white;
+	padding: 2rem;
+	border-radius: 2px;
+	box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+	
+}
+.card-single div:last-child span{
+	font-size: 3rem;
+	font-weight: bold;
+	color: aquamarine;
+}
+.card-single div:first-child span{
+	color: gray;
+
+}
+
+
+.container{
+
+    display: block;
+    padding-top: 2%;
+    text-align: center;
+	text-emphasis-color: white;
+	color:white;
+    
+    
+}
+.fill{
+
+    display: block;
+}
